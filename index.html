@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Usciamo insieme?</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      background-color: #fff8dc;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      color: #444;
+    }
+
+    .flowers {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    button {
+      font-size: 1.2em;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .yes {
+      background-color: #ffd700;
+    }
+
+    .no {
+      background-color: #d3d3d3;
+      position: relative;
+    }
+
+    .play-button {
+      background: linear-gradient(135deg, #ffe066, #ffca28);
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      font-weight: bold;
+      border-radius: 30px;
+      color: #333;
+      cursor: pointer;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+
+    .play-button:hover {
+      transform: scale(1.05);
+      background: linear-gradient(135deg, #ffeb3b, #ffc107);
+    }
+
+    .play-button:active {
+      transform: scale(0.98);
+    }
+  </style>
+</head>
+<body>
+
+  <button class="play-button" onclick="document.getElementById('musica').play()">▶️ Fai partire la musica</button>
+
+  <audio id="musica">
+    <source src="stronger.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="flowers">🌻🌻🌻</div>
+  <h1>Ti andrebbe di uscire con me questo weekend?</h1>
+
+  <button class="yes" onclick="alert('fammi sapere quando vieni a salerno <3')">Sì</button>
+  <button class="no" onmouseover="spostaNo()">No</button>
+
+  <script>
+    function spostaNo() {
+      const noButton = document.querySelector('.no');
+      const x = Math.random() * window.innerWidth * 0.6;
+      const y = Math.random() * window.innerHeight * 0.6;
+      noButton.style.position = 'absolute';
+      noButton.style.left = x + 'px';
+      noButton.style.top = y + 'px';
+    }
+  </script>
+
+</body>
+</html>
