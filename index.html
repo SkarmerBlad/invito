@@ -7,17 +7,15 @@
     body {
       font-family: 'Comic Sans MS', cursive, sans-serif;
       text-align: center;
-      background-image: url('https://i.imgur.com/UxR9FZw.jpg'); /* sfondo tropicale */
-      background-size: cover;
-      background-position: center;
+      background-color: #f0f0f0; /* sfondo neutro */
       padding-top: 100px;
-      color: #fff;
+      color: #333;
     }
 
     h1 {
       font-size: 2.5em;
-      color: #ffeb3b;
-      text-shadow: 2px 2px 4px #000;
+      color: #444;
+      text-shadow: 1px 1px 2px #ccc;
     }
 
     .flowers {
@@ -33,7 +31,7 @@
       border-radius: 15px;
       cursor: pointer;
       transition: 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
 
     .yes {
@@ -80,115 +78,13 @@
   </audio>
 
   <div class="flowers">🌺🌴🌺</div>
-  <h1>Ohana significa famiglia...  
-  <br>  
-  E la famiglia esce insieme! 💙  
-  <br><br>  
-  Usciamo questo weekend?</h1>
 
-  <button class="yes" onclick="alert('è il mio compleanno non puoi dire di no <3')">Sì!</button>
-  <button class="no" onmouseover="spostaNo()">No 😢</button>
-
-  <script>
-    function spostaNo() {
-      const noButton = document.querySelector('.no');
-      const x = Math.random() * window.innerWidth * 0.6;
-      const y = Math.random() * window.innerHeight * 0.6;
-      noButton.style.position = 'absolute';
-      noButton.style.left = x + 'px';
-      noButton.style.top = y + 'px';
-    }
-  </script>
-
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-  <meta charset="UTF-8">
-  <title>Lilo & Stitch - Vuoi uscire con me?</title>
-  <style>
-    body {
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      text-align: center;
-      background-image: url('https://i.imgur.com/UxR9FZw.jpg'); /* sfondo tropicale */
-      background-size: cover;
-      background-position: center;
-      padding-top: 100px;
-      color: #fff;
-    }
-
-    h1 {
-      font-size: 2.5em;
-      color: #ffeb3b;
-      text-shadow: 2px 2px 4px #000;
-    }
-
-    .flowers {
-      font-size: 2.5em;
-      margin-bottom: 20px;
-    }
-
-    button {
-      font-size: 1.2em;
-      padding: 10px 20px;
-      margin: 10px;
-      border: none;
-      border-radius: 15px;
-      cursor: pointer;
-      transition: 0.3s ease;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
-    .yes {
-      background-color: #64d8cb;
-      color: #fff;
-    }
-
-    .no {
-      background-color: #e57373;
-      color: #fff;
-      position: relative;
-    }
-
-    .play-button {
-      background: linear-gradient(135deg, #81d4fa, #4fc3f7);
-      border: none;
-      padding: 15px 30px;
-      font-size: 1.2em;
-      font-weight: bold;
-      border-radius: 30px;
-      color: #fff;
-      cursor: pointer;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      transition: all 0.3s ease;
-    }
-
-    .play-button:hover {
-      transform: scale(1.05);
-      background: linear-gradient(135deg, #4fc3f7, #29b6f6);
-    }
-
-    .play-button:active {
-      transform: scale(0.98);
-    }
-  </style>
-</head>
-<body>
-
-  <button class="play-button" onclick="document.getElementById('musica').play()">🎵 Fai partire la musica</button>
-
-  <audio id="musica">
-    <source src="la guerra è finita.mp3" type="audio/mpeg">
-    Il tuo browser non supporta l'audio.
-  </audio>
-
-  <div class="flowers">🌺🌴🌺</div>
-  <h1>Ohana significa famiglia...  
-  <br>  
-  E la famiglia esce insieme! 💙  
-  <br><br>  
-  Usciamo questo weekend?</h1>
+  <h1>
+    Ohana significa famiglia...<br>
+    E la famiglia esce insieme! 💙<br><br>
+    Usciamo questo weekend?<br>
+    (esce il film di Lilo e Stitch)
+  </h1>
 
   <button class="yes" onclick="alert('è il mio compleanno non puoi dire di no <3')">Sì!</button>
   <button class="no" onmouseover="spostaNo()">No 😢</button>
